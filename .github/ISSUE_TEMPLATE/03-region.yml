@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        현재 지원 지역은 서울시, 거제시, 인천시입니다. 새 지역은 고객사 소재지에 맞춰 추가합니다.
+        지원 지역은 계속 추가되고 있습니다. 요청 전에 [README의 지역 목록](https://github.com/microsoft/DungeonCopilot#readme)에서 이미 있는 지역인지 확인해 주세요.
 
   - type: input
     id: region
@@ -37,8 +37,9 @@ body:
   - type: textarea
     id: source
     attributes:
-      label: 참고할 공공데이터 출처
-      description: 아는 링크가 있으면 적어주세요. 없으면 비워두셔도 됩니다
+      label: 데이터 파일
+      description: 쓸 데이터 파일을 이 칸에 끌어다 놓거나 Ctrl+V로 붙여넣으세요. 파일이 없으면 공공데이터 링크만 적어주셔도 됩니다.
+      placeholder: 파일을 여기에 끌어다 놓으세요
     validations:
       required: false
 
@@ -47,5 +48,5 @@ body:
     attributes:
       label: 확인
       options:
-        - label: 기존 세 지역(서울, 거제, 인천)으로는 대체가 어렵습니다
+        - label: 기존에 포함된 지역으로는 대체가 어렵습니다
           required: true
