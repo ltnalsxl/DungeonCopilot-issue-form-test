@@ -42,11 +42,11 @@ body:
   - type: dropdown
     id: urgency
     attributes:
-      label: 급한 정도
+      label: Urgency
       options:
-        - 다음 세션 전까지 필요합니다
-        - 있으면 좋겠습니다
-        - 아이디어 차원입니다
+        - 높음 (다음 세션 전)
+        - 보통
+        - 낮음 (아이디어)
     validations:
       required: true
 
