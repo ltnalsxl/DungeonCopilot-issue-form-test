@@ -17,13 +17,13 @@ body:
       required: true
 
   - type: input
-    id: customer
+    id: purpose
     attributes:
-      label: 어느 고객사 세션에 쓰나요
-      description: 고객사명을 적기 어려우면 업종만 적어주셔도 됩니다
-      placeholder: 예) 제조 고객사 / 사내 교육
+      label: 목적
+      description: 선택 항목입니다. 우선순위를 잡는 데 참고합니다.
+      placeholder: 예) OO 고객사 세션 / 사내 교육 / 파트너 행사
     validations:
-      required: true
+      required: false
 
   - type: input
     id: need_by
