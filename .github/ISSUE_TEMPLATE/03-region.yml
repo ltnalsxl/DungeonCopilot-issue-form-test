@@ -26,10 +26,11 @@ body:
       required: true
 
   - type: input
-    id: due
+    id: need_by
     attributes:
-      label: 언제까지 필요한가요
-      placeholder: 예) 2026-10-15 세션
+      label: Need by
+      description: 이 날짜까지 반영이 필요합니다. YYYY-MM-DD 형식으로 적어주세요.
+      placeholder: 2026-10-15
     validations:
       required: true
 
