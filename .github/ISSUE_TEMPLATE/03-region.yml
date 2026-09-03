@@ -1,0 +1,50 @@
+name: 지역 데이터 추가
+description: dnc2026_k 워크숍에 쓸 새 지역 데이터셋 추가를 요청합니다
+title: "[지역] "
+labels: ["region"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        현재 지원 지역은 서울시, 거제시, 인천시입니다. 새 지역은 고객사 소재지에 맞춰 추가합니다.
+
+  - type: input
+    id: region
+    attributes:
+      label: 추가할 지역
+      placeholder: 예) 포항시
+    validations:
+      required: true
+
+  - type: input
+    id: customer
+    attributes:
+      label: 어느 고객사 세션에 쓰나요
+      description: 고객사명을 적기 어려우면 업종만 적어주셔도 됩니다
+      placeholder: 예) 제조 고객사 / 사내 교육
+    validations:
+      required: true
+
+  - type: input
+    id: due
+    attributes:
+      label: 언제까지 필요한가요
+      placeholder: 예) 2026-10-15 세션
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: 참고할 공공데이터 출처
+      description: 아는 링크가 있으면 적어주세요. 없으면 비워두셔도 됩니다
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: check
+    attributes:
+      label: 확인
+      options:
+        - label: 기존 세 지역(서울, 거제, 인천)으로는 대체가 어렵습니다
+          required: true
