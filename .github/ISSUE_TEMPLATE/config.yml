@@ -1,8 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
-  - name: 고객 후기 / 요청사항 남기기
-    url: https://forms.office.com/
-    about: 고객이 직접 남기는 후기는 여기로 받습니다. 저장소가 공개라 이슈로는 올리지 않습니다.
   - name: 문의
     url: https://github.com/microsoft/DungeonCopilot#readme
-    about: 사용법이나 링크는 README를 먼저 봐 주세요.
+    about: 사용법이나 워크숍 링크는 README를 먼저 봐 주세요.
